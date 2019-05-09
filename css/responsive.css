@@ -50,26 +50,14 @@
 	  column-count: 1;
 	}
 
-	.col-1 {
-	  float: none;
-	  width: 100%;
-	  left: 0;
-	}
-
-	.col-2 {
-	  float: none;
-	  width: 100%;
-	  left: 0;
-	}
-
-	.col-3 {
-	  float: none;
-	  width: 100%;
-	  left: 0;
-	}
+	.col-1, .col-2, .col-3{
+	    width: 100%;
+	    margin-left: 0;
+	    float: none;
+	  }
 
 	.border-right {
-	  border-right: 0;
+	  border: 0;
 	}
 
 	#details div {
@@ -78,8 +66,26 @@
 }
 
 @media only screen and (max-width: 700px) {
-	#logo {
+
+	#navbar nav a{
+	  display:none;
+	}
+	  
+	#navbar nav a.menu-icon {
+	  display: block;
+	  float:right;
+	  font-size: 1.5em;
+	  padding: 10px 20px;
+	  width: auto;
+	}
+
+	#logo{
 		font-size: 0;
+	    padding: 60px 0 0;
+	}
+
+	#social{
+	    top: 60px;
 	}
 }
 
