@@ -1,0 +1,15 @@
+@media screen and (max-width: 1100px){
+  .wrapper {
+    width: 90%;
+  }
+  #social {
+    position: absolute;
+    width: auto;
+    top: 82px;
+    right: 4px;
+  }
+}
+
+@media tablet and (){
+
+}
