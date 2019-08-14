@@ -281,7 +281,9 @@ header {
 }
 
 #navbar nav a.menu-icon {
+  
   display: none;
+  /* display: none; */
 }
 
 /*////////// LOGO //////////*/
