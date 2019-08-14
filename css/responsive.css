@@ -85,14 +85,14 @@
   }
 
   #logo h2 {
-    display: none;
+    visibility: hidden;
   }
 
   #logo {
-    padding: 55px 0 0;
+    padding: 60px 0 0;
   }
 
   #social {
-    top: 55px;
+    top: 60px;
   }
 }
