@@ -1,0 +1,18 @@
+ /* Create a new stylesheet in the css folder named responsive.css */
+ @media only screen and (max-width: 1108px) {
+  /* Set the width of the .wrapper class to 90% */
+  .wrapper {
+    width: 90%;
+  }
+ 
+  /* Change the #social selector 
+     to have an absolute position, 
+     with an automatic width, 82px from the top, 
+     and 4px from the right 
+  */
+  #social {
+    position: absolute;
+    top: 82px;
+    right: 4%;
+    width: auto;
+  }
