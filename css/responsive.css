@@ -1,18 +1,90 @@
- /* Create a new stylesheet in the css folder named responsive.css */
- @media only screen and (max-width: 1108px) {
+/* Create a new stylesheet in the css folder named responsive.css */
+@media only screen and (max-width: 1108px) {
   /* Set the width of the .wrapper class to 90% */
   .wrapper {
     width: 90%;
-  }
+ }
  
-  /* Change the #social selector 
-     to have an absolute position, 
-     with an automatic width, 82px from the top, 
-     and 4px from the right 
-  */
-  #social {
+/* Change the #social selector 
+   to have an absolute position, 
+   with an automatic width, 82px from the top, 
+   and 4px from the right 
+*/
+#social {
     position: absolute;
     top: 82px;
     right: 4%;
     width: auto;
+}
+
+
+/* Add a breakpoint for 900px */
+@media only screen and (max-width: 900px) {
+  /* Set the body text to a font size of 85% */
+  body {
+    font-size: 85%;
   }
+
+  /* Change the #logo h1 to 35px for height and width */
+  #logo h1 {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Change the #logo h2 font size to 2.2em */
+  #logo h2 {
+    font-size: 2.2em;
+  }
+
+
+
+
+  /* Adjust the top positioning on the #social selector to 72px */
+  #social {
+      top: 72px;
+  }
+
+  /*
+     Change the col-3 p selector to have a column count of 2. 
+     Hint: look at the style.css stylesheet (lines 184, 185, & 186)
+     and make sure you 
+     grab all three column-count attributes!
+  */
+  .col-3 p {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+} /* closes the <<@media only screen and (max-width: 900px)>> block */
+
+/*
+   Remove the right border by setting .border-right border 
+   property to 0
+   Set the #details div height to auto
+*/
+
+/* Add a breakpoint for 750px */
+@media only screen and (max-width:750px) {
+
+  /* Within this breakpoint:
+     Set the font size of the #navbar nav a selector to 0.9em;
+  */
+  #navbar nav a {
+     font-size: 0.9em;
+  }
+
+  /* Change the .col-3 p column count to 1 */
+  .col-3 p {
+    column-count: 1;
+  }
+
+  /* 
+     For the .col-1, .col-2, and .col-3 selectors, set the width 
+     to 100%, left margin to 0, and float to none 
+  */
+  .col-1, .col-2, .col-3 {
+    width: 100%;
+    left-margin: 0;
+    float: none;
+  }
+} /* closes the <<@media only screen and (max-width:750px)>> block */
