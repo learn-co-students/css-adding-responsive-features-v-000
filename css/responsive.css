@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1100px) {
+
+  .wrapper {
+    width: 90%;
+  }
+
+  #social {
+    position: absolute;
+    top: 82px;
+    right: 4%;
+    width: auto;
+  }
+
+  #social a {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    font-size: 85%;
+  }
+
+  .logo h1 {
+    height: 35px;
+    width: 35px;
+  }
+
+  .logo h2 {
+    font-size: 2.2em;
+  }
+
+  .col-3 p {
+    -moz-column-rule: 1px dotted #ccc;
+    -webkit-column-rule: 1px dotted #ccc;
+    column-rule: 1px dotted #ccc;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  #social {
+    top: 72px;
+  }
+
+
+
+}
+
+
+
+
+
+/*? shouldn't the social bar's position be fixed if i put position as absolute?
+/* having trouble reaching 1108 when i shrink the screen. how can i set my inspect
+/*screen to look like the minimal one in the video?*/
