@@ -10,15 +10,18 @@ Set the width of the .wrapper class to 90% */
   .wrapper {
    width: 90%; 
   }
-}
 
 #social {
   position:absolute;
   width: auto;
   top: 82px;
-  bottom: 4px;
+  right: 4px;
 }
 
+#social a {
+  display: inline-block;
+ }
+}
 /* Add a breakpoint for tablets at 900px */
 /* Add a breakpoint for 900px in your responsive.css stylesheet */
 /* Within this breakpoint: */
@@ -28,52 +31,28 @@ Set the width of the .wrapper class to 90% */
 /* Adjust the top positioning on the #social selector to 72px */
 /* Change the col-3 p selector to have a column count of 2. Hint: look at the style.css stylesheet and make sure you grab all three column-count */ /* attributes! */
 
-@media only screen and (min-width:900px) {
+@media only screen and (max-width:900px) {
   body {
     font-size: 85%;
-     
   }
-}
-
-h1 {
+  
+#logo h1 {
   height:35px;
   width: 35px;
 }
 
-h2 {
+#logo h2 {
   font-size: 2.2em;
 }
 
 #social {
-  position: 72px;
   top: 72px;
 }
 
 #col-3 p {
- column-count: 2
+ column-count: 2;
+ -moz-column-count:2;
+ -webkit-column-count: 2;
+ }
 }
- 
- .col-1 {
-  float: left;
-  width: 32%;
-}
-
-.col-2 {
-  float: left;
-  width: 66%;
-}
-
-.col-3 p {
-  -moz-column-rule: 1px dotted #ccc;
-  -webkit-column-rule: 1px dotted #ccc;
-  column-rule: 1px dotted #ccc;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
-  column-gap: 1.5em;
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
-}
-
-
 
