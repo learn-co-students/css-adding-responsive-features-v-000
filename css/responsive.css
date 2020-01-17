@@ -1,0 +1,119 @@
+/* 1.Add breakpoint for smaller screens at 1100px */ 
+
+/* 2. Within this breakpoint:
+Set the width of the .wrapper class to 90% */
+
+/* 3.Change the #social selector to have an absolute position, with an automatic width, */
+/* 82px from the top, and 4px from the right  */
+
+@media only screen and (max-width:1108px) {
+  .wrapper {
+   width: 90%; 
+  }
+
+#social {
+  position:absolute;
+  width: auto;
+  top: 82px;
+  right: 4px;
+}
+
+#social a {
+  display: inline-block;
+ }
+}
+/* Add a breakpoint for tablets at 900px */
+
+/* Add a breakpoint for 900px in your responsive.css stylesheet */
+/* Within this breakpoint: */
+
+/* Set the body text to a font size of 85% */
+/* Change the #logo h1 to 35px for height and width */
+/* Change the #logo h2 font size to 2.2em */
+
+/* Adjust the top positioning on the #social selector to 72px */
+/* Change the col-3 p selector to have a column count of 2. Hint: look at the style.css stylesheet and make sure you grab all three column-count */ /* attributes! */
+
+@media only screen and (max-width:900px) {
+  body {
+    font-size: 85%;
+  }
+  
+#logo h1 {
+  height:35px;
+  width: 35px;
+}
+
+#logo h2 {
+  font-size: 2.2em;
+}
+
+#social {
+  top: 72px;
+}
+
+#col-3 p {
+ column-count: 2;
+ -moz-column-count:2;
+ -webkit-column-count: 2;
+ }
+}
+
+@media only screen and (max-width:750px) {
+  #navbar nav a {
+   font-size: 0.9em; 
+    
+  }
+.col-3 p {
+ column-count:1;
+ -moz-column-count: 1;
+ -webkit-column-count: 1;
+ 
+}
+
+.col-1, .col-2, .col-3{
+  width: 100%;
+  margin-left:0;
+  float:none;
+}
+
+.border-right {
+  border: 0;
+
+}
+
+
+#details div {
+  height:auto;
+  
+ }
+}
+
+@media only screen and (max-width:700px){
+  #navbar nav a{
+    display:none;
+  }
+  
+  #navbar nav a.menu-icon {
+    display: block;
+    float:right;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    width: auto;
+  }
+  #logo{
+    padding: 60px 0 0;
+  }
+  #social{
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  #logo h2{
+    visibility: hidden; 
+  }
+}
+
+
+

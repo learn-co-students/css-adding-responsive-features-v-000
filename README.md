@@ -17,8 +17,7 @@ toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emu
 
 ## Objectives 
  - Create a meta tag to handle viewport settings
- - Create a new stylesheet for responsive designs
- - Link new stylesheet to html
+ - 
  - Add media queries and responsive styling for specified breakpoints
  
  
