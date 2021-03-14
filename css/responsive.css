@@ -9,6 +9,10 @@
     top: 82px;
     right: 4px;
   }
+
+  #social a {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -69,6 +73,7 @@
 
   #navbar nav a.menu-icon {
     display: block;
+    float: right;
   }
 
   #logo h2 {
