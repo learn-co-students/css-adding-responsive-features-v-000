@@ -62,5 +62,13 @@
   .border-right { border: 0; }
 
   #details div { height: auto; }
-  
+
+}
+
+@media only screen and (min-width: 700px) {
+  #navbar { display: none; }
+
+  #navbar nav a.menu-icon { display: ;}
+
+  #logo h2 { display: none; }
 }
