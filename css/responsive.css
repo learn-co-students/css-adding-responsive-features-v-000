@@ -68,7 +68,7 @@
 @media only screen and (max-width: 700px) {
   #navbar { display: none; }
 
-  #navbar nav a.menu-icon { display: ;}
+  #navbar nav a.menu-icon { display: inline-block;}
 
   #logo h2 { display: none; }
 }
